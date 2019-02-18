@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv2"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="32dp"
+        android:text="Name : "
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="98dp"
+        android:text="Email"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv1"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv2"
+        android:layout_alignStart="@+id/et1"
+        android:layout_marginStart="-3dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/db"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-61dp"
+        android:layout_marginBottom="11dp"
+        android:text="Register"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv2"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="169dp"
+        android:text="Gender:"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <RadioGroup
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et1"
+        android:layout_alignTop="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Others" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-17dp"
+        android:layout_marginBottom="212dp"
+        android:text="Nationality:"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <EditText
+        android:id="@+id/nation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="199dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-18dp"
+        android:layout_marginBottom="151dp"
+        android:text="Date of Birth"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <EditText
+        android:id="@+id/db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et1"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-9dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginBottom="81dp"
+        android:text="Occupation"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <EditText
+        android:id="@+id/occupy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bt"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-4dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:text="Next" />
+
+</RelativeLayout>
